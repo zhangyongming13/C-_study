@@ -1,9 +1,15 @@
-const int NONE_DSCP = 0;
-const int MIN_COST = 10;
-const int MAX_REAL = 46;
+#ifndef TEST_MAIN_H
+#define TEST_MAIN_H
 
-int dscp_value [] {
-    NONE_DSCP,
-    MIN_COST,
-    MAX_REAL
+#include <string>
+
+using namespace std;
+
+class Test {
+public:
+    virtual void testA() const = 0;
+
+    virtual void testB() const = 0;
 };
+
+#endif //TEST_MAIN_H
