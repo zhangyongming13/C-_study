@@ -12,6 +12,7 @@ public:
         ListNode *slow = head;
         int flag = 1;
         while (first != nullptr) {
+            // 快指针出发了K个了，慢指针可以出发了
             if (flag > k) {
                 slow = slow->next;
             }

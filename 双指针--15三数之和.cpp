@@ -28,6 +28,7 @@ public:
                 if (tmpSum == 0) {
                     result.push_back({nums[i], nums[left], nums[right]});
 
+                    // 避免重复数组加入
                     while ((left < right) && (nums[left] == nums[left + 1])) {
                         left++;
                     }
